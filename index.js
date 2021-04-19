@@ -67,11 +67,12 @@ async function startPost() {
 
 window.onscroll = () => {
     let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight;  if (bottomOfWindow) {
-        startLoader();
+       if(firstCall === false) { startLoader();
         
       setTimeout(function() {
         finishLoader()
         startPost();},1500)
+    }else{console.log('tenes que tocar el boton por lo menos una vez!');}
     }
   };
 
