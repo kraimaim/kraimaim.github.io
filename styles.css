@@ -113,6 +113,7 @@ position: relative;
     position: fixed;
     bottom: 50px;
     transition: opacity 0.1s ease-in ;
+    z-index: 10;
     
 }
 
